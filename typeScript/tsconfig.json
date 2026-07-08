@@ -8,6 +8,7 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "types": ["bun"],
+    "noImplicitAny": true,    // if i write true that means i have to tell/especify the type of the veriable and if it is false that means i don't haave to es[ecify the type of the veriable
 
     // Bundler mode
     "moduleResolution": "bundler",
