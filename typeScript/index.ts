@@ -14,7 +14,7 @@ console.log(x + y)
 // if it doesn;t exists, then return null
 let a :number[] =[4,5,6,1];
 
-function first_element(arr:number[]){
+function first_element(arr:number []){
     if(arr.length>0){
         return arr[0];
     }else{
