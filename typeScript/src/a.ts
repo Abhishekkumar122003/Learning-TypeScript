@@ -4,7 +4,7 @@ type keyInput = "up" | "down" | "left" | "right" ; // type is a way to provide t
 
 enum Direction { // enum => i can iterate through the value inside it
     Up,
-    Down,
+    Down,  // enum i use when i know how many or which type of data are going to pass in function 
     Left,
     Right
 }
