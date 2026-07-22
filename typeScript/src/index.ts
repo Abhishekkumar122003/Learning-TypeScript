@@ -6,7 +6,7 @@ function greet(name:any){
 let x =1; // here you don't tell what type is it but still the typescript know by looking that "x & y" looks like number
 let y =2;  //this is called inference in typescrit
 
-console.log(x + y)
+console.log(x + y , "hi there")
 
 // Write a function first_element
 // that takes a array as an input,
