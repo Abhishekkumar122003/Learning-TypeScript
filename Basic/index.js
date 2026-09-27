@@ -10,11 +10,12 @@ function greet(firstName) {
 function Sum(num1, num2) {
     return num1 + num2;
 }
-console.log(Sum(2, 4));
+let ans = Sum(2, 4);
+// console.log(Sum(2 , 4));
 //Special type "any"
-let anyType;
-anyType = "string";
-anyType = 11;
+// let anyType : any;
+// anyType="string";
+// anyType=11;
 function executefunc(funct) {
     setTimeout(funct, 1000);
 }
