@@ -7,14 +7,14 @@
 // console.log(x);
 
 function greet(firstName : string) {
-    console.log("Hello " + firstName);
+    // console.log("Hello " + firstName);
 }
 
 function Sum(num1 : number , num2 : number): number {
     return num1 + num2;
 }
 
-let ans = Sum(2,4);
+// let ans = Sum(2,4);
 // console.log(Sum(2 , 4));
 //Special type "any"
 
@@ -29,6 +29,18 @@ function executefunc(funct: () => void) {
 }
 
 function desplay(){
-    console.log("Hi there");
+    // console.log("Hi there");
 }
-executefunc(desplay);
+// executefunc(desplay);
+
+
+// how to pass the function which return some type inside the function 
+
+function sub(a: number , b: number) {
+    return (a-b);
+}
+
+function takesFunction(fn: (x:number , z:number) => number) {
+    setTimeout(fn , 2000);
+}
+console.log(takesFunction(() => sub(3, 2)));

@@ -5,12 +5,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // x =parseInt("kjsbf");
 // console.log(x);
 function greet(firstName) {
-    console.log("Hello " + firstName);
+    // console.log("Hello " + firstName);
 }
 function Sum(num1, num2) {
     return num1 + num2;
 }
-let ans = Sum(2, 4);
+// let ans = Sum(2,4);
 // console.log(Sum(2 , 4));
 //Special type "any"
 // let anyType : any;
@@ -20,7 +20,15 @@ function executefunc(funct) {
     setTimeout(funct, 1000);
 }
 function desplay() {
-    console.log("Hi there");
+    // console.log("Hi there");
 }
-executefunc(desplay);
+// executefunc(desplay);
+// how to pass the function which return some type inside the function 
+function sub(a, b) {
+    return (a - b);
+}
+function takesFunction(fn) {
+    setTimeout(fn, 2000);
+}
+console.log(takesFunction(() => sub(3, 2)));
 //# sourceMappingURL=index.js.map
