@@ -10,16 +10,18 @@ function greet(firstName : string) {
     console.log("Hello " + firstName);
 }
 
-function Sum(num1 : number , num2 : number) {
+function Sum(num1 : number , num2 : number): number {
     return num1 + num2;
 }
-console.log(Sum(2 , 4));
+
+let ans = Sum(2,4);
+// console.log(Sum(2 , 4));
 //Special type "any"
 
-let anyType : any;
+// let anyType : any;
 
-anyType="string";
-anyType=11;
+// anyType="string";
+// anyType=11;
 
 
 function executefunc(funct: () => void) {
