@@ -1,8 +1,9 @@
 // let creat the class which implement the interface
 
 interface People {
-    name:string;
+    name?:string;
     age:number;
+    isLegal():boolean;
 }
 
 class Manager implements People {
@@ -12,13 +13,25 @@ class Manager implements People {
     // I can add extra thing here
     number?:number
 
-    constructor(name:string, age: number, number:number) {
+    constructor(name:string, age: number) {
         this.name=name;
         this.age=age;
-        this.number = number
+        
 
+    }
+    isLegal(): boolean {
+        return this.age>= 18
     }
 }
 
-let user = new Manager("Jhon", 32, 29342903);
-console.log(user.age)
+
+class God extends Manager {
+    constructor(name:string , age:number){
+        super(name, age)
+    }
+}
+
+
+
+let user = new Manager("Jhon", 32);
+console.log(user.isLegal())
