@@ -10,6 +10,7 @@ interface Adderess {         // here "?" depict that either this adderess sectio
          city?:string;      // optional parameter
          country?:string;
          pincode?: number;
+         HouseNumber:number;
     };
 
 
