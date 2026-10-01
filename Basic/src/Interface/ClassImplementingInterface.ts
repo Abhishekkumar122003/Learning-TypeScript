@@ -13,11 +13,13 @@ class Manager implements People {
     // I can add extra thing here
     number?:number
 
-    constructor(public name:string,public age: number) {
+    constructor(
+        public name:string,
+        public age: number) 
+        {
         this.name=name;
         this.age=age;
-        
-
+    
     }
     isLegal(): boolean {
         return this.age>= 18
