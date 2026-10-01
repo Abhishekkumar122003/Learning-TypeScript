@@ -11,4 +11,28 @@ function printId(id:StringOrNumber){
 }
 
 printId(1231);
-printId("2123d")
+printId("2123d");
+
+type Employee = {
+    name:string;
+    startDate:Date;
+};
+
+type Manager = {
+    name:string;
+    department:string;
+}
+
+type TeamLead = Employee & Manager;
+let e:Employee = {
+    name:"Jhonethan",
+    startDate:new Date()
+}
+console.log(e.name);
+console.log(e.startDate.toLocaleDateString())
+
+let m:Manager = {
+    name:"Adam",
+    department:"R&D"
+}
+console.log(m);
