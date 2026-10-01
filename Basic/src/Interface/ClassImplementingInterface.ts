@@ -40,3 +40,4 @@ console.log(user.isLegal())
 
 let god = new God("god", 99999);
 console.log(god.isLegal());
+console.log(god, " hi there")
