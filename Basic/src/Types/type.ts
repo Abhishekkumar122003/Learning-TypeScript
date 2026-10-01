@@ -23,7 +23,7 @@ type Manager = {
     department:string;
 }
 
-type TeamLead = Employee & Manager;
+
 let e:Employee = {
     name:"Jhonethan",
     startDate:new Date()
@@ -36,3 +36,4 @@ let m:Manager = {
     department:"R&D"
 }
 console.log(m);
+
